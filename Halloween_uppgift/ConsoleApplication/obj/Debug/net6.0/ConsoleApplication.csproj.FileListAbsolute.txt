@@ -1,0 +1,15 @@
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\bin\Debug\net6.0\ConsoleApplication.exe
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\bin\Debug\net6.0\ConsoleApplication.deps.json
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\bin\Debug\net6.0\ConsoleApplication.runtimeconfig.json
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\bin\Debug\net6.0\ConsoleApplication.dll
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\bin\Debug\net6.0\ref\ConsoleApplication.dll
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\bin\Debug\net6.0\ConsoleApplication.pdb
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.csproj.AssemblyReference.cache
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.AssemblyInfoInputs.cache
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.AssemblyInfo.cs
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.csproj.CoreCompileInputs.cache
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.dll
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\obj\Debug\net6.0\ref\ConsoleApplication.dll
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.pdb
+C:\Users\Ralley\Desktop\Skola\C#Uppgift\Halloween_uppgift\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.genruntimeconfig.cache
