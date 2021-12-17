@@ -10,8 +10,6 @@ namespace ConsoleApplication
 
     class Program
     {
-
-
         public static void Main(string[] args)
         {
             MainMenu();
@@ -19,7 +17,7 @@ namespace ConsoleApplication
 
         static void MainMenu()
         {
-            //Rensar upp
+            //Rensar upp i menyn
             Console.Clear();
             Console.WriteLine("Välkommen till Halloweenfesten!");
             Console.WriteLine("Vänligen registrera dig nedan, tryck Enter för att gå tillbaka");
@@ -29,8 +27,8 @@ namespace ConsoleApplication
             Console.WriteLine("4. Skapa en rabattkod");
             Console.WriteLine("5. tryck på 'x' för att Avsluta");
             var userInput = Console.ReadLine();
-            // main-loops through menu and calls method based on choice
-            var phoneBook = new PhoneBook();
+            var kontaktLista = new KontaktLista();
+
 
 
 
@@ -56,7 +54,7 @@ namespace ConsoleApplication
                         Console.ReadLine();
 
                         var newContact = new Contact(FirstName, LastName, Email);
-                        phoneBook.AddContact(newContact);
+                        kontaktLista.AddContact(newContact);
 
                         Console.WriteLine($"Välkommen till halloweenfesten {FirstName} {LastName}!");
                         Task.Delay(800).Wait();
@@ -72,41 +70,34 @@ namespace ConsoleApplication
 
                     case "2":
                         // Navigerar till listan  
-
-                        Task.Delay(800).Wait();
                         Console.WriteLine("------------------------------------------------------------");
                         Console.WriteLine("Följande personer kommer på festen");
                         Console.WriteLine("------------------------------------------------------------");
                         Task.Delay(800).Wait();
-                        phoneBook.DisplayAllContact();
-
-
+                        kontaktLista.DisplayAllContact();
                         break;
 
                     case "3":
-                        // Navigera till att ta bort en gäst
-                       
+                        // Navigerar till att ta bort en gäst genom att söka på efternamnet
                         Console.Write("Skriv in efternamnet på personen du vill ta bort från listan : ");
-                        var searchNumber = Console.ReadLine();
-                        phoneBook.DisplayContact(searchNumber);                 
-                        Console.WriteLine($"Nu har {searchNumber} tagits bort från listan.");
-                        
-
+                        var searchLastName = Console.ReadLine();
+                        kontaktLista.DisplayContact(searchLastName);
                         break;
 
                     case "4":
-                        // Navigera till rabattkoden
+                        // Navigerar till rabattfunktionen
                         Rabatt();
                         break;
 
+
                     case "x":
+                        // Navigerar till avsluta
                         Console.WriteLine("Vill du verkligen avsluta programmet?");
                         Task.Delay(500).Wait();
                         Console.WriteLine("Tryck på Enter för att bekräfta!");
                         Task.Delay(500).Wait();
                         Console.ReadLine();
                         Environment.Exit(1);
-                        // Navigera till Avsluta funktionen
                         return;
                 }
 
@@ -118,10 +109,10 @@ namespace ConsoleApplication
 
             }
 
-            //metod
+
             static void Rabatt()
             {
-
+                // skriver ut en autogenererad GuidId som i detta fall används som rabattkod
                 Console.WriteLine("Här kommer din rabattkod");
                 Task.Delay(800).Wait();
                 var discount1 = new Discount(Guid.NewGuid(), "discounted");
@@ -130,10 +121,13 @@ namespace ConsoleApplication
                 Console.WriteLine("Vem vill du skicka rabattkoden till? Skriv personens förnamn.");
                 var FirstName = Console.ReadLine();
                 Console.WriteLine("Du har skickat rabattkoden till : " + FirstName);
-                Console.ReadKey();
+
             }
-
-
         }
     }
 }
+            
+ 
+                
+        
+
