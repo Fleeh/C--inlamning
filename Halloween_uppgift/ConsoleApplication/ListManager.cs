@@ -16,7 +16,7 @@ namespace NamesUI
         {
             Console.WriteLine($"{contact.FirstName} {contact.LastName} {contact.Email}");
 
-            // skriver ut användarinmatning i en textfil i huvud mappen, som även kan läsas till
+            // skriver ut användarinmatning, write to textfile, read to textfile
             string filePath = @"C:\Users\Ralley\Desktop\Skola\C#Uppgift\Test.txt.txt";
 
             List<string> lines = File.ReadAllLines(filePath).ToList();
@@ -33,13 +33,13 @@ namespace NamesUI
                 DisplayContactDetails(contact);
             }
         }
-        // skapar metoden att lägga till
+        // skapar metoden att lägga till användare
         public void AddContact(Contact contact)
         {
             Contacts.Add(contact);
         }
 
-        // skapar metoden att ta bort
+        // skapar metoden att ta bort användare
         public void RemoveContact(Contact contact)
         {
             Contacts.Remove(contact);
@@ -51,7 +51,7 @@ namespace NamesUI
             var contact = Contacts.FirstOrDefault(x => x.LastName == LastName);
             if (contact == null)
             {
-                Console.WriteLine("Personen finns inte med i listan.");
+                Console.WriteLine("Personen finns inte med i listan, se över stora och små bokstäver.");
             }
             else
             {

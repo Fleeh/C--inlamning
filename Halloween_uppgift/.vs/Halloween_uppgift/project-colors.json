@@ -5,7 +5,17 @@
       "ProjectGuid": "273a15c6-10a1-4df4-8ab1-34b34e063606",
       "DisplayName": "ConsoleApplication",
       "ColorIndex": 0
+    },
+    "5c8e0190-6c9e-4b5d-b89b-1761dca56f5e": {
+      "ProjectGuid": "5c8e0190-6c9e-4b5d-b89b-1761dca56f5e",
+      "DisplayName": "TestProject1",
+      "ColorIndex": 1
+    },
+    "0bf4c87d-b817-4d24-90d1-b825ba2c093d": {
+      "ProjectGuid": "0bf4c87d-b817-4d24-90d1-b825ba2c093d",
+      "DisplayName": "TestProject2",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }

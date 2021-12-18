@@ -17,7 +17,7 @@ namespace ConsoleApplication
 
         static void MainMenu()
         {
-            //Rensar upp i menyn
+            
             Console.Clear();
             Console.WriteLine("Välkommen till Halloweenfesten!");
             Console.WriteLine("Vänligen registrera dig nedan, tryck Enter för att gå tillbaka");
@@ -40,7 +40,7 @@ namespace ConsoleApplication
                 {
                     case "1":
 
-                        // Navigerar till att lägga till en gäst                 
+                        // Navigerar till skapandet av en ny gäst             
                         Console.Write("Ange Förnamn : ");
                         string FirstName = Console.ReadLine();
 
@@ -57,14 +57,8 @@ namespace ConsoleApplication
                         kontaktLista.AddContact(newContact);
 
                         Console.WriteLine($"Välkommen till halloweenfesten {FirstName} {LastName}!");
-                        Task.Delay(800).Wait();
-                        Console.WriteLine("------------------------------------------------------------");
-                        Task.Delay(800).Wait();
-                        Console.WriteLine("Tryck på '1' för att lägga till en ny gäst");
-                        Task.Delay(800).Wait();
-                        Console.WriteLine("Tryck på '2' för att se lista på alla gäster");
-                        Task.Delay(800).Wait();
-                        Console.WriteLine("Tryck på '3' för att ta bort en gäst");
+                        Task.Delay(500).Wait();
+                        
 
                         break;
 
@@ -73,7 +67,7 @@ namespace ConsoleApplication
                         Console.WriteLine("------------------------------------------------------------");
                         Console.WriteLine("Följande personer kommer på festen");
                         Console.WriteLine("------------------------------------------------------------");
-                        Task.Delay(800).Wait();
+                        Task.Delay(1000).Wait();
                         kontaktLista.DisplayAllContact();
                         break;
 
@@ -101,9 +95,19 @@ namespace ConsoleApplication
                         return;
                 }
 
-                Task.Delay(800).Wait();
+                Task.Delay(1600).Wait();
                 Console.WriteLine("------------------------------------------------------------");
-                Console.WriteLine("Välj ett nytt alternativ från listan");
+                Console.WriteLine("Tryck på '1' för att lägga till en ny gäst");
+                Task.Delay(500).Wait();
+                Console.WriteLine("Tryck på '2' för att se lista på alla gäster");
+                Task.Delay(500).Wait();
+                Console.WriteLine("Tryck på '3' för att ta bort en gäst");
+                Task.Delay(500).Wait();
+                Console.WriteLine("Tryck på '4' för att skicka en rabattkod till en gäst");
+                Task.Delay(500).Wait();
+                Console.WriteLine("Tryck på 'x' för att Avsluta");
+                Task.Delay(500).Wait();
+                Console.WriteLine("Välj ett av alternativen ovan.");
                 userInput = Console.ReadLine();
 
 
